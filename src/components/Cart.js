@@ -3,6 +3,7 @@ import "./Cart.css";
 import { useDispatch, useSelector } from "react-redux";
 import { setShowCart } from "../store/cartReducer";
 import { logout } from "../store/authReducer";
+
 const Cart = () => {
   const qty = useSelector((state) => state.cart.items.length);
   const dispatch = useDispatch();
